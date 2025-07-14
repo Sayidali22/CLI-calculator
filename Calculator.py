@@ -45,8 +45,7 @@ def main():
 
         if choice == "1":
             x_input = input("Enter first number (or 'ans' to use last result): ")
-            if x_input.lower() == "q":
-                break
+            
             if x_input.lower() == "ans":
                 if last_result is None:
                     print("No previous result available.\n")
