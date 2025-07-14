@@ -18,21 +18,21 @@ def main():
 
     while True:
         try:
-            x_input = input("Please enter your first number or type 'q' to quit: ")
+            x_input = input("Please enter your first number or type 'q' to quit:\n ")
             if x_input.lower() == 'q':
-                print("Exiting Command Line Calculator. See you next time.")
+                print("Exiting Command Line Calculator. See you next time.\n")
                 break
             x = float(x_input)
         except ValueError:
-            print("Invalid input. Try again.")
+            print("Invalid input. Try again.\n")
             continue
 
         operator = input("Enter operator (+, -, *, /): ")
 
         try:
-            y = float(input("Please enter your second number: "))
+            y = float(input("Please enter your second number: \n"))
         except ValueError:
-            print("Invalid number. Try again.")
+            print("Invalid number. Try again.\n")
             continue
 
         if operator == "+":
